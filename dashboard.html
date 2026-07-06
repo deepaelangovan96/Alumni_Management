@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <div class="text-center">
+        <h2>🎓 Alumni Dashboard</h2>
+        <h5>V.S.B. Engineering College, Karur</h5>
+        <p>Department of Artificial Intelligence and Machine Learning</p>
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow text-center bg-primary text-white">
+                <div class="card-body">
+                    <h3>👨‍🎓</h3>
+                    <h5>View Alumni</h5>
+                    <a href="/alumni" class="btn btn-light">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow text-center bg-success text-white">
+                <div class="card-body">
+                    <h3>📝</h3>
+                    <h5>Register</h5>
+                    <a href="/register" class="btn btn-light">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow text-center bg-warning">
+                <div class="card-body">
+                    <h3>🔍</h3>
+                    <h5>Search</h5>
+                    <a href="/search" class="btn btn-dark">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow text-center bg-danger text-white">
+                <div class="card-body">
+                    <h3>🚪</h3>
+                    <h5>Logout</h5>
+                    <a href="/login" class="btn btn-light">Logout</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h4>👨‍🎓 Alumni</h4>
+                    <p>Manage alumni details.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h4>📅 Events</h4>
+                    <p>View upcoming alumni events.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h4>🏫 Department</h4>
+                    <p>AIML - Artificial Intelligence and Machine Learning</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

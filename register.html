@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-md-6">
+
+        <div class="card shadow-lg">
+
+            <div class="card-header bg-success text-white text-center">
+
+                <h3>🎓 Alumni Registration</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <form method="POST">
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Create password" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Batch</label>
+                        <input type="text" class="form-control" name="batch" placeholder="Example: 2025" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Department</label>
+
+                        <select class="form-select" name="department" required>
+
+                            <option value="">Select Department</option>
+
+                            <option>AIML</option>
+                            <option>CSE</option>
+                            <option>IT</option>
+                            <option>ECE</option>
+                            <option>EEE</option>
+                            <option>MECH</option>
+                            <option>CIVIL</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="d-grid">
+
+                        <button class="btn btn-success">
+
+                            Register
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

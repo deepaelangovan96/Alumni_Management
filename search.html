@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Alumni</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:40px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width:80%;
+            margin-top:20px;
+        }
+
+        th,td{
+            border:1px solid black;
+            padding:10px;
+            text-align:center;
+        }
+
+        h2{
+            color:darkblue;
+        }
+
+        input[type=text]{
+            padding:8px;
+            width:250px;
+        }
+
+        input[type=submit]{
+            padding:8px 15px;
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        .error{
+            color:red;
+            font-weight:bold;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Search Alumni</h2>
+
+<form method="POST">
+
+    <input type="text" name="name" placeholder="Enter Alumni Name" required>
+
+    <input type="submit" value="Search">
+
+</form>
+
+{% if data %}
+
+<table>
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Batch</th>
+    <th>Department</th>
+</tr>
+
+{% for row in data %}
+
+<tr>
+    <td>{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+    <td>{{ row[2] }}</td>
+    <td>{{ row[4] }}</td>
+    <td>{{ row[5] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% elif request.method == 'POST' %}
+
+<p class="error">❌ No Results Found</p>
+
+{% endif %}
+
+<br><br>
+
+<a href="/">🏠 Home</a>
+
+</body>
+</html>

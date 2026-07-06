@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <div class="text-center mb-4">
+        <h2>👨‍💼 Admin Dashboard</h2>
+        <h5>V.S.B. Engineering College, Karur</h5>
+        <p>Department of Artificial Intelligence and Machine Learning</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3 mb-3">
+            <div class="card bg-primary text-white shadow">
+                <div class="card-body text-center">
+                    <h3>👨‍🎓</h3>
+                    <h5>View Alumni</h5>
+                    <a href="/alumni" class="btn btn-light">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card bg-success text-white shadow">
+                <div class="card-body text-center">
+                    <h3>📝</h3>
+                    <h5>Register</h5>
+                    <a href="/register" class="btn btn-light">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card bg-warning shadow">
+                <div class="card-body text-center">
+                    <h3>🔍</h3>
+                    <h5>Search</h5>
+                    <a href="/search" class="btn btn-dark">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card bg-danger text-white shadow">
+                <div class="card-body text-center">
+                    <h3>📅</h3>
+                    <h5>Events</h5>
+                    <a href="/events" class="btn btn-light">Open</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    Quick Actions
+                </div>
+
+                <div class="card-body">
+
+                    <a href="/alumni" class="btn btn-primary mb-2 w-100">👨‍🎓 Manage Alumni</a>
+
+                    <a href="/events" class="btn btn-success mb-2 w-100">📅 Manage Events</a>
+
+                    <a href="/search" class="btn btn-warning mb-2 w-100">🔍 Search Alumni</a>
+
+                    <a href="/" class="btn btn-danger w-100">🚪 Logout</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-info text-white">
+                    Admin Information
+                </div>
+
+                <div class="card-body">
+
+                    <p><strong>College:</strong> V.S.B. Engineering College, Karur</p>
+
+                    <p><strong>Department:</strong> AIML</p>
+
+                    <p><strong>System:</strong> Alumni Management System</p>
+
+                    <p><strong>Version:</strong> 1.0</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

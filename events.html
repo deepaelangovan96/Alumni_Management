@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="text-center mb-5">
+
+        <h1 class="text-primary">🎉 Alumni Events</h1>
+
+        <p class="lead">
+            Stay connected by participating in upcoming alumni activities.
+        </p>
+
+    </div>
+
+    <div class="row">
+
+        <!-- Event 1 -->
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow-lg h-100 border-0">
+
+                <div class="card-header bg-primary text-white">
+                    <h3>Alumni Meet 2026</h3>
+                </div>
+
+                <div class="card-body">
+
+                    <p><strong>📅 Date:</strong> 15 August 2026</p>
+
+                    <p><strong>📍 Venue:</strong> College Auditorium</p>
+
+                    <p>
+                        Annual alumni gathering to reconnect with friends,
+                        faculty members and juniors.
+                    </p>
+
+                </div>
+
+                <div class="card-footer text-center">
+
+                    <a href="{{ url_for('event_register', event_name='Alumni Meet 2026') }}"
+                       class="btn btn-primary">
+                        Register
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Event 2 -->
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow-lg h-100 border-0">
+
+                <div class="card-header bg-success text-white">
+                    <h3>Career Guidance</h3>
+                </div>
+
+                <div class="card-body">
+
+                    <p><strong>📅 Date:</strong> 25 August 2026</p>
+
+                    <p><strong>📍 Venue:</strong> Seminar Hall</p>
+
+                    <p>
+                        Alumni share their career journey and provide
+                        guidance to current students.
+                    </p>
+
+                </div>
+
+                <div class="card-footer text-center">
+
+                    <a href="{{ url_for('event_register', event_name='Career Guidance') }}"
+                       class="btn btn-success">
+                        Join Event
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Event 3 -->
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow-lg h-100 border-0">
+
+                <div class="card-header bg-danger text-white">
+                    <h3>AI & ML Workshop</h3>
+                </div>
+
+                <div class="card-body">
+
+                    <p><strong>📅 Date:</strong> 10 September 2026</p>
+
+                    <p><strong>📍 Venue:</strong> AIML Laboratory</p>
+
+                    <p>
+                        Hands-on workshop on Artificial Intelligence,
+                        Machine Learning and emerging technologies.
+                    </p>
+
+                </div>
+
+                <div class="card-footer text-center">
+
+                    <a href="{{ url_for('event_register', event_name='AI & ML Workshop') }}"
+                       class="btn btn-danger">
+                        Register
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
